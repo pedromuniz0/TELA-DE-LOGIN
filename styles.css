@@ -1,0 +1,109 @@
+/* Estilo global */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0D1B2A; /* Azul escuro */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Container da introdução com o logotipo */
+.intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0D1B2A;
+  transition: all 0.5s ease;
+}
+
+/* Logotipo inicial */
+.logo {
+  width: 100px;
+  height: 100px;
+  background-color: #FFD700; /* Dourado */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: #0D1B2A; /* Azul escuro */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/* Container do formulário de login */
+.login-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0); /* Oculto no início */
+  background-color: #1B263B;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  color: #FFD700; /* Dourado para detalhes */
+  transition: transform 0.5s ease;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Estilo dos rótulos e campos de entrada */
+label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #FFD700;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #FFD700;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  background-color: #0D1B2A;
+  color: #FFFFFF;
+}
+
+/* Estilo do botão de login */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #FFD700;
+  color: #0D1B2A;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #FFC107;
+}
+
+/* Mensagem de erro */
+#message {
+  margin-top: 15px;
+  color: #FF4B4B;
+}
+
+/* Animação para expandir o login */
+.show-login {
+  transform: translate(-50%, -50%) scale(1);
+}
